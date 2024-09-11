@@ -43,9 +43,9 @@ public class AAA {
 		System.out.println(sum);
 		
 		
-		float f1 = 2147483648.0f;
-		float f2 = 2147483638.0f;
-		float f3 = 2147483968.0f;
+		float f1 = 2147483648.0f;   //float: 32비트, 약 7자리 정밀도
+		float f2 = 2147483638.0f;   //double: 64비트, 약 15자리 정밀도
+		float f3 = 2147483968.0f;   //정밀한 계산을 하려면 double을 쓰는게 좋다.
 		
 		System.out.printf("%f\n", f1);
 		System.out.printf("%f\n", f2);
