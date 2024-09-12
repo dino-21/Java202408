@@ -32,10 +32,18 @@ public class Stack01 {
 		System.out.printf("peek:%d %d\n",stack.peek(), stack.pop());
 		System.out.printf("peek:%d %d\n",stack.peek(), stack.pop());
 		
+		// for 루프 안에서 스택의 크기를 고정하지 않고, 루프가 반복될 때마다 stack.size()가 변경되기 때문에
 		/*System.out.println(stack.size());
 		for(int i=0; i<stack.size(); i++) {			
 			System.out.printf("peek:%d, %d\n",stack.peek(), stack.pop());
 		}*/
+
+               
+		while (!stack.isEmpty()) {  // 스택이 비어 있지 않은 동안
+                        System.out.printf("peek:%d, %d\n", stack.peek(), stack.pop());
+                }
+
+        System.out.println("Final size: " + stack.size());  // 마지막에 사이즈 확인
 			
 		
 //		Iterator<Person> itr = set.iterator();
